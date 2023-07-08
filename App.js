@@ -11,7 +11,7 @@ import Localizacion from "./screens/Localizacion";
 
 export default function App() {
   const Stack = createStackNavigator();
-  const [filtro, setFiltro] = useState(FiltroContext);
+  const [filtro, setFiltro] = useState("");
   const searchBar = useRef(null);
 
   return (
@@ -37,7 +37,6 @@ export default function App() {
                   value={filtro}
                   ref={searchBar}
                   style={{
-                    marginEnd: 100,
                     backgroundColor: "tomato",
                     placeholderTextColor: "#FFF",
                     flexDirection: "row-reverse",
